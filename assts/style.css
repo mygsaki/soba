@@ -114,7 +114,10 @@ footer{
 
 @media screen and (max-width: 780px) {
 
-
+.okinawasoba img{
+    height: 200px;
+    width:  400px;
+}
 
 #Area{
     display: block;
