@@ -1,0 +1,223 @@
+
+html{
+    background-color: #ffffe5;
+}
+
+header{
+    background-color: rgba(165, 42, 42, 0.856);
+    width: auto;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-right{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.okinawasoba img{
+    margin-left: 50px;
+}
+.deta{
+    margin-left: 50px;
+}
+
+
+h1{
+    font-size: 30px;
+    margin: 20px 0 0 50px;
+}
+.soba2{
+    height: 500px;
+    width: 800px;
+}
+
+h2{
+    font-size: 22px;
+    margin: 15px 0 0 50px;
+    color:brown;
+}
+
+h3{
+    font-size: 22px;
+    margin: 15px 0 0 50px;
+    color:brown;
+}
+
+.Answer{
+    margin-left: 50px; 
+}
+
+.okinawasoba{
+    font-size: 15px;
+
+}
+.soba3{
+    height: 400px;
+    width: 600px;
+}
+.store img{
+    height: 400px;
+    width: 400px;
+    margin-left: 98px;
+}
+
+#Area{
+    display: flex;
+
+}
+
+.north{
+ height: 300px;
+ width: 300px;
+ border: #A0522D solid 3px;
+ margin: 100px 20px 100px 20px;
+ padding: 20px 20px 20px 20px;
+}
+
+.Restaurant{
+    display: flex;
+}
+
+.store img{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: 9px;
+}
+
+
+.store{
+    height: 480px;
+    width: 330px;
+    border: #A0522D solid 3px;
+    margin: 50px 10px 50px 10px;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+
+
+footer{
+    background-color: brown;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#hamburger{
+    display: none;
+  }
+
+@media screen and (max-width: 780px) {
+
+
+
+#Area{
+    display: block;
+}
+
+.Restaurant{
+
+    display: block;
+}
+
+
+.hamburger{
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  
+  .hamburger span,
+  .hamburger span::before,
+  .hamburger span::after{
+   width: 100%;
+   height: 5px;
+   display: block;
+   background-color: white;
+   border-radius: 2px;
+   transition: all .5s ease;
+  }
+  
+  .hamburger span{
+    position: relative;
+    top: calc(50% - 2px);
+  }
+  
+  .hamburger span::before,
+  .hamburger span::after{
+  content: "";
+  position: absolute;
+  }
+  
+  .hamburger span::before{
+  top: -9px;
+  }
+  
+  .hamburger span::after{
+  top: 9px;
+  }
+  
+  /*  真ん中の線  */
+  #hamburger:checked + .hamburger span{
+    background-color: transparent;
+  }
+  
+  /* 上の線 */
+  #hamburger:checked + .hamburger span::before{
+    transform: rotate(45deg) translate(5px,5px);
+  }
+  
+  /* 下の線 */
+  #hamburger:checked + .hamburger span::after{
+    transform: rotate(-45deg) translate(7px,-8px);
+  }
+  
+  
+.header-right{
+  position: fixed;
+    top: 98px;
+    right: -200px;
+    height: 200vh;
+    background-color: brown;
+    opacity: .8;
+  padding-left: 10px;
+  }
+  
+.header-right ul{
+    display: block;
+  
+  }
+  
+#hamburger:checked ~ .header-right{
+    right: 0;
+    transition: all .5s ease;
+    
+  }
+  
+.header{
+    position: fixed;
+    width: calc(100% -  80px);
+    overflow: hidden;
+  
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
